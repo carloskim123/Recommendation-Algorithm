@@ -13,4 +13,4 @@ Contributions to the project are welcome! Please feel free to submit a pull requ
 This project is licensed under the MIT license. See the `LICENSE` file for more details.
 
 ## Acknowledgments
-This project was inspired by [this blog post](https://medium.com/@nicholas.alipaz/simple-recommendation-system-using-javascript-without-ml-7bef78ad24a3) and [this GitHub repository](https://github.com/Vladislav-Zolotaryov/Simple-Recommendation-System).
+This project was inspired by [this blog post](https://medium.com/simple-ml/recommendation-systems-df15f1eaee57).
