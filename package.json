@@ -1,0 +1,11 @@
+{
+  "name": "recommendation_algorithms",
+  "author": "Carlos Kirui",
+  "type": "module",
+  "dependencies": {
+    "brain": "1.0.0",
+    "ml-matrix": "6.11.0",
+    "node-fetch": "3.3.2"
+  }
+}
+
