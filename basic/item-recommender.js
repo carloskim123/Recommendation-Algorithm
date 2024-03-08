@@ -1,17 +1,23 @@
-function Item(name, description) {
+function ItemGlobal(name, description) {
     this.name = name;
     this.description = description;
 }
 
+class ItemExtended extends ItemGlobal {
+    constructor(name, description) {
+        super(name, description);
+    }
+}
+
 const items = [
-    new Item("Chicken Noodle Soup", "Delicious soup for a comforting meal."),
-    new Item("Organic Chicken Broth", "Homemade organic broth for soups and stews."),
-    new Item("Grilled Chicken Salad", "Healthy salad with fresh greens and vinaigrette."),
-    new Item("Wooden Salad Servers", "Handcrafted servers for stylish salads."),
-    new Item("Lavender Scented Soy Candle", "Relaxing lavender-scented soy candle."),
-    new Item("Exotic Fruit Basket", "Delightful assortment of exotic fruits."),
-    new Item("Dark Chocolate Truffles", "Indulge in gourmet dark chocolate truffles."),
-    new Item("Gourmet Meat Sampler", "Experience a variety of gourmet meats."),
+    new ItemExtended("Chicken Noodle Soup", "Delicious soup for a comforting meal."),
+    new ItemExtended("Organic Chicken Broth", "Homemade organic broth for soups and stews."),
+    new ItemExtended("Grilled Chicken Salad", "Healthy salad with fresh greens and vinaigrette."),
+    new ItemExtended("Wooden Salad Servers", "Handcrafted servers for stylish salads."),
+    new ItemExtended("Lavender Scented Soy Candle", "Relaxing lavender-scented soy candle."),
+    new ItemExtended("Exotic Fruit Basket", "Delightful assortment of exotic fruits."),
+    new ItemExtended("Dark Chocolate Truffles", "Indulge in gourmet dark chocolate truffles."),
+    new ItemExtended("Gourmet Meat Sampler", "Experience a variety of gourmet meats."),
 ];
 
 // Function to calculate the similarity between two items based on their descriptions
@@ -34,6 +40,7 @@ function generateRecommendations(item) {
             exploreNew.push(items[i]);
         }
     }
+
 
     // Return an object containing both recommendations and exploreNew
     return { recommendations, exploreNew };
